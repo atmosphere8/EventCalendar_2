@@ -1,8 +1,8 @@
-import "@styles/main.css";
-import axios from "axios";
+import "@styles/events.css";
 import { useEffect, useState } from "react";
+import axios from "axios";
 
-function Main() {
+function Events() {
   const [response, setResponse] = useState([]);
 
   const fetchData = async () => {
@@ -14,24 +14,23 @@ function Main() {
       console.error("Error fetching data:", error);
     }
   };
+
   useEffect(() => {
     fetchData();
   }, []);
 
   return (
     <>
-      <h1>Hello World!</h1>
-      <p>I`m insane</p>
-      <a href="">AboutEvent page</a>
-      <br />
+      <h1>Events</h1>
       <br />
       <section className="events">
         {response.map((mongo) => (
-          <div key={mongo.id}>
+          <div className="event" key={mongo._id}>
             <img src={mongo.imagePath} alt="" />
             <p>{mongo.locationText}</p>
             <p>{mongo.title}</p>
             <p>{mongo.description}</p>
+            <a href={`/about/${mongo._id}`}>More about</a>
           </div>
         ))}
       </section>
@@ -39,4 +38,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Events;

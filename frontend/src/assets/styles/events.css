@@ -1,0 +1,15 @@
+.events {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 360px;
+}
+
+.event {
+  margin-right: 300px;
+}
+
+.event img {
+  width: 200px;
+  height: 200px;
+}

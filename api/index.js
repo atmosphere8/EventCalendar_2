@@ -9,7 +9,7 @@ const { Schema } = mongoose;
 
 const schema = new Schema({
   imagePath: String,
-  locationText: String,
+  location: String,
   title: String,
   description: String,
 });
@@ -33,14 +33,14 @@ app.get("/", (req, res) => {
 });
 
 app.put("/create", (req, res) => {
-  const { imagePath, locationText, title, description } = req.body;
+  const { imagePath, location, title, description } = req.body;
   Model.collection.insertOne({
     imagePath: imagePath,
-    locationText: locationText,
+    location: location,
     title: title,
     description: description,
   });
-  res.status(200).json({ imagePath, locationText, title, description });
+  res.status(200).json({ imagePath, location, title, description });
 });
 
 app.get("/test", async (req, res) => {

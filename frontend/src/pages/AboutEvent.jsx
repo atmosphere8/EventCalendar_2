@@ -29,9 +29,9 @@ function AboutEvent() {
       <section className="about">
         <div key={item._id}>
           <img src={item.imagePath} alt="" />
-          <p>{item.locationText}</p>
-          <p>{item.title}</p>
-          <p>{item.description}</p>
+          <p>Location: {item.location}</p>
+          <p>Title: {item.title}</p>
+          <p>Description: {item.description}</p>
         </div>
       </section>
 

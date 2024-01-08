@@ -1,8 +1,7 @@
 import Arrow from "@images/svgs/Arrow";
-import Menu from "@images/svgs/Menu";
 import { useFilterContext } from "@contexts/FilterContext";
 
-function Header() {
+function Footer() {
   const { setFilter } = useFilterContext();
 
   const handleFilterClick = (filter) => {
@@ -11,10 +10,13 @@ function Header() {
 
   return (
     <>
-      <header>
+      <footer>
+        <section className="logo">
+          <p className="logo__text">LO</p>
+        </section>
         <nav>
           <a className="nav__item" href="">
-            Logo
+            Contact
           </a>
           <a className="nav__item" href="">
             Events
@@ -25,10 +27,8 @@ function Header() {
         </nav>
         <section className="filter">
           <button className="filter__item">
-            <p>
-              Location Filter
-              <Arrow />
-            </p>
+            <p>Location Filter</p>
+            <Arrow />
 
             <div className="menu">
               <button
@@ -58,10 +58,8 @@ function Header() {
             </div>
           </button>
           <button className="filter__item">
-            <p>
-              Title Filter
-              <Arrow />
-            </p>
+            <p>Title Filter</p>
+            <Arrow />
 
             <div className="menu">
               <button
@@ -103,10 +101,8 @@ function Header() {
             </div>
           </button>
           <button className="filter__item">
-            <p>
-              Description Filter
-              <Arrow />
-            </p>
+            <p>Description Filter</p>
+            <Arrow />
 
             <div className="menu">
               <button
@@ -130,9 +126,9 @@ function Header() {
             </div>
           </button>
         </section>
-      </header>
+      </footer>
     </>
   );
 }
 
-export default Header;
+export default Footer;

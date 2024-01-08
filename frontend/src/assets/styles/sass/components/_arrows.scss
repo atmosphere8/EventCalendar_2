@@ -1,0 +1,21 @@
+@use "@abstracts" as *;
+
+header,
+footer {
+  .filter {
+    .filter__item {
+      .arrow {
+        fill: $white_color;
+        height: 12px;
+
+        transition: 0.3s all;
+      }
+      &:hover {
+        .arrow {
+          transform: rotate(90deg);
+          fill: #fff971;
+        }
+      }
+    }
+  }
+}

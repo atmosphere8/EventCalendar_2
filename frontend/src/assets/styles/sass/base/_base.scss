@@ -1,0 +1,28 @@
+@use "@abstracts" as *;
+
+body,
+p {
+  margin: 0;
+}
+
+body {
+  height: auto;
+  width: 100vw;
+  background-color: $yellow_color;
+}
+
+header {
+  height: 90px;
+  width: 100vw;
+  background: $black_color;
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+footer {
+  height: 251px;
+  width: auto;
+  background: #181818;
+}

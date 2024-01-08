@@ -22,6 +22,9 @@ export default defineConfig({
       "@images": fileURLToPath(new URL("./src/assets/images", import.meta.url)),
       "@videos": fileURLToPath(new URL("./src/assets/videos", import.meta.url)),
       "@styles": fileURLToPath(new URL("./src/assets/styles", import.meta.url)),
+      "@abstracts": fileURLToPath(
+        new URL("./src/assets/styles/sass/abstracts", import.meta.url)
+      ),
       "@fonts": fileURLToPath(new URL("./src/assets/fonts", import.meta.url)),
     },
   },

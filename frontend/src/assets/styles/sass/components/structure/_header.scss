@@ -1,0 +1,40 @@
+@use "@abstracts" as *;
+
+.menu {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  nav {
+    margin-top: 33px;
+    margin-left: 46px;
+
+    .nav__item {
+      margin-right: 100px;
+    }
+  }
+
+  .filter {
+    margin-top: 33px;
+    margin-right: 60px;
+
+    .filter__item {
+      margin-left: 100px;
+
+      .arrow {
+        margin-left: 14px;
+      }
+
+      &:hover {
+        .menu {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+        }
+      }
+    }
+  }
+}

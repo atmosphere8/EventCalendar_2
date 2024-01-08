@@ -1,0 +1,10 @@
+@use "@abstracts" as *;
+
+header,
+footer {
+  .filter__item {
+    border: none;
+    background-color: $black_color;
+    height: 20px;
+  }
+}

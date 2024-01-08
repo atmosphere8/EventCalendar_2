@@ -1,4 +1,4 @@
-import "@styles/components/general/events.scss";
+import "@styles/sass/components/general/_events.scss";
 import Point from "@images/svgs/Point.jsx";
 
 import { useEffect, useState } from "react";

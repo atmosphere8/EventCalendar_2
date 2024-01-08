@@ -2,7 +2,7 @@ function Arrow() {
   return (
     <>
       <svg
-        className="arrow-svg"
+        className="arrow"
         width="16"
         height="9"
         viewBox="0 0 16 9"

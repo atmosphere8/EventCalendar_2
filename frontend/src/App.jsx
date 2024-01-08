@@ -1,10 +1,12 @@
-import "./App.scss";
+import "@styles/sass/style.scss";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FilterProvider } from "@contexts/FilterContext";
+
+import Header from "@components/structure/Header";
 import Main from "@pages/Main";
 import AboutEvent from "@pages/AboutEvent";
-import Header from "@components/structure/Header";
-import { FilterProvider } from "@contexts/FilterContext";
+import Footer from "@components/structure/Footer";
 
 function App() {
   return (
@@ -12,10 +14,13 @@ function App() {
       <BrowserRouter>
         <FilterProvider>
           <Header />
+
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path="/about/:id" element={<AboutEvent />} />
           </Routes>
+
+          <Footer />
         </FilterProvider>
       </BrowserRouter>
     </div>

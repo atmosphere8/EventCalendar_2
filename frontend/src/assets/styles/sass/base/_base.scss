@@ -12,7 +12,6 @@ body {
 }
 
 header {
-  height: 90px;
   width: 100vw;
   background: $black_color;
 
@@ -22,7 +21,6 @@ header {
 }
 
 footer {
-  height: 251px;
-  width: auto;
-  background: #181818;
+  width: 100vw;
+  background: $black_color;
 }

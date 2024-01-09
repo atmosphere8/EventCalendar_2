@@ -1,0 +1,238 @@
+@use "@abstracts" as *;
+
+.burger-menu {
+  .menu-button {
+    stroke: $white_color;
+
+    width: 40px;
+    height: 30px;
+
+    transition: 0.1s all;
+
+    &:hover {
+      stroke: $yellow_color;
+    }
+  }
+}
+
+nav,
+.filter,
+.menu {
+  display: none;
+}
+
+@include xs {
+  header {
+    height: 80px;
+
+    .burger-menu {
+      display: flex;
+      justify-content: space-between;
+
+      .logo {
+        margin-left: 50px;
+        margin-top: 28px;
+        .logo__text {
+          color: $white_color;
+          font-family: Grtsk Tera;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: uppercase;
+          text-decoration: none;
+
+          transition: 0.3s all;
+
+          &:hover {
+            color: $yellow_color;
+          }
+        }
+      }
+      .menu-button {
+        margin-top: 11px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@include lg {
+  header {
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .burger-menu {
+      display: none;
+    }
+
+    nav,
+    .filter {
+      display: flex;
+    }
+
+    nav {
+      margin-top: 33px;
+      margin-left: 46px;
+
+      .nav__item {
+        margin-right: 100px;
+
+        color: $white_color;
+        font-family: Grtsk Tera;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        transition: 0.3s all;
+
+        &:hover {
+          color: $yellow_color;
+        }
+      }
+    }
+
+    .filter {
+      margin-top: 33px;
+      margin-right: 60px;
+
+      .filter__item {
+        margin-left: 100px;
+
+        color: $white_color;
+        font-family: Grtsk Tera;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+        background-color: $black_color;
+        height: 20px;
+
+        transition: 0.3s all;
+
+        .arrow {
+          margin-left: 12px;
+          margin-top: 5px;
+
+          fill: $white_color;
+          height: 9px;
+
+          transition: 0.3s all;
+        }
+
+        &:hover {
+          color: $yellow_color;
+
+          .arrow {
+            transform: rotate(90deg);
+            fill: #fff971;
+          }
+
+          .menu {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include xl {
+  header {
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .burger-menu {
+      display: none;
+    }
+
+    nav,
+    .filter {
+      display: flex;
+    }
+
+    nav {
+      margin-top: 33px;
+      margin-left: 46px;
+
+      .nav__item {
+        margin-right: 100px;
+
+        color: $white_color;
+        font-family: Grtsk Tera;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+
+        transition: 0.3s all;
+
+        &:hover {
+          color: $yellow_color;
+        }
+      }
+    }
+
+    .filter {
+      margin-top: 33px;
+      margin-right: 60px;
+
+      .filter__item {
+        margin-left: 100px;
+
+        color: $white_color;
+        font-family: Grtsk Tera;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: none;
+        background-color: $black_color;
+        height: 20px;
+
+        transition: 0.3s all;
+
+        .arrow {
+          margin-left: 12px;
+          margin-top: 5px;
+
+          fill: $white_color;
+          height: 12px;
+
+          transition: 0.3s all;
+        }
+
+        &:hover {
+          color: $yellow_color;
+
+          .arrow {
+            transform: rotate(90deg);
+            fill: #fff971;
+          }
+
+          .menu {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+}

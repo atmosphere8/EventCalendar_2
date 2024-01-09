@@ -1,4 +1,4 @@
-import Events from "@components/general/Events.jsx";
+import Events from "@components/layouts/Events.jsx";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";

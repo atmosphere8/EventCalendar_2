@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <>
-      <header>
+      <header className="header">
         <nav>
           <a className="nav__item" href="">
             Logo
@@ -129,6 +129,18 @@ function Header() {
               </button>
             </div>
           </button>
+        </section>
+
+        <section className="burger-menu">
+          <section className="logo">
+            <a href="" className="logo__text">
+              Logo
+            </a>
+          </section>
+
+          <section className="menu-button">
+            <Menu />
+          </section>
         </section>
       </header>
     </>

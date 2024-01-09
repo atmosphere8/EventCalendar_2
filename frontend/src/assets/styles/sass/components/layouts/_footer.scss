@@ -1,0 +1,98 @@
+@use "@abstracts" as *;
+
+footer {
+  height: 251px;
+
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    margin-left: 100px;
+
+    .logo__text {
+      margin-top: 70px;
+
+      color: $white_color;
+      font-family: Grtsk Tera B;
+      font-size: 90px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 60px;
+    margin-right: 100px;
+    .nav__item {
+      margin-bottom: 30px;
+
+      color: $white_color;
+      font-family: Grtsk Tera;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      transition: 0.3s all;
+
+      &:hover {
+        color: $yellow_color;
+      }
+    }
+  }
+
+  .filter {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 60px;
+    margin-right: 200px;
+
+    .filter__item {
+      display: flex;
+      justify-content: space-between;
+
+      margin-bottom: 30px;
+
+      color: $white_color;
+      font-family: Grtsk Tera;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      background-color: $black_color;
+      height: 20px;
+
+      transition: 0.3s all;
+
+      .arrow {
+        margin-left: 25px;
+        margin-top: 5px;
+
+        fill: $white_color;
+        height: 12px;
+
+        transition: 0.3s all;
+      }
+
+      &:hover {
+        color: $yellow_color;
+
+        .arrow {
+          transform: rotate(90deg);
+          fill: #fff971;
+        }
+      }
+    }
+  }
+}

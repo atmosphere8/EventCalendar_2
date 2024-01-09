@@ -3,7 +3,7 @@ import Line from "@images/svgs/Line";
 import Download from "@images/svgs/Download";
 import Lake from "@images/lake.jpg";
 
-import Events from "@components/general/Events";
+import Events from "@components/layouts/Events.jsx";
 
 function Main() {
   return (
